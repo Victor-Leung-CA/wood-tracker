@@ -1,0 +1,54 @@
+.woodFormContainer{
+    background: rgb(243, 243, 243);
+    margin-bottom: 5rem;
+    padding: 3.3rem;
+    border-radius: 1rem;
+    margin-left: 3rem;
+    min-height: 350px;
+}
+
+.woodFormSelect{
+    display: inline-block;
+    width: 17rem;
+    margin-left: 2rem;
+}
+
+.woodFormInput{
+    border: 1px solid rgb(214, 213, 213);
+    border-radius: 3px;
+    height: 2.2rem;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 1650px) {
+    .woodFormContainer{
+        padding-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .woodFormContainer{
+        margin-bottom: 1rem;
+
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .woodFormContainer{
+        margin-left: 0;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .woodFormSelect{
+        width: 100%;
+        margin-left: 0rem;
+    }
+    
+    .woodFormInput{
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+}

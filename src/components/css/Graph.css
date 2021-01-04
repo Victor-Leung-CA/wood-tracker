@@ -1,0 +1,30 @@
+.graph{
+    padding: 4rem;
+    background: rgb(243, 243, 243);
+    border-radius: 1rem;
+    position: relative;
+    left: 400px;
+    width: calc(100vw - 470px);
+    margin-bottom: 5rem;
+}
+
+
+.formLabel{
+    display: inline-block;
+}
+
+.formButton{
+    border-radius: 2rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    padding-right:1.5rem;
+}
+
+@media screen and (max-width: 1350px) {
+    .graph{
+        left: 5%;
+        width: 90%;
+        padding: 1rem;
+    }
+}

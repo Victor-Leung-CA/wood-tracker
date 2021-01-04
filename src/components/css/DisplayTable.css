@@ -1,0 +1,19 @@
+.displayTable{
+    height: 300px;
+}
+
+.displayTableContainer{
+    background: rgb(243, 243, 243);
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+    .displayTableContainer{
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

@@ -1,0 +1,95 @@
+.sidebar {
+  margin: 0;
+  padding-top: 50px;
+  width: 350px;
+  background-color: #ffffff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  box-shadow: 0 0 20px -2px rgba(0, 0, 0, 0.1);
+}
+
+.sidebarTitle{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(182, 91, 6);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.sidebarIcon{
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+.sidebar .navbarLink {
+  color: black;
+  padding-left: 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  float: left;
+  margin: 1rem;
+}
+
+.sidebar .navbarLink.active {
+  color: rgb(192, 127, 5);
+}
+
+.sidebar .navbarLink:hover:not(.active) {
+    color: rgb(121, 79, 0);
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 1350px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar .navbarLink {
+      float: left;
+      text-align: center;
+      padding-left: 6rem;
+      padding-bottom: 0.7rem;
+      padding-top: 0;
+      margin: 0;
+    }
+
+  .sidebarTitle{
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 800px) {
+
+  .sidebar .navbarLink {
+    text-align: center;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .sidebarTitle{
+    font-weight: bold;
+    padding-bottom: 1rem;
+    padding-top: 0;
+  }
+
+  .sidebar .navbarLink {
+    text-align: center;
+    float: none;
+    padding-left: 0;
+    display: block;
+    padding-bottom: 0.2rem;
+  }
+}

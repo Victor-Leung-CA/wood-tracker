@@ -1,0 +1,12 @@
+.woodSelectionPageContainer{
+    margin-left: 350px;
+    width: (100% - 350px);
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1350px) {
+    .woodSelectionPageContainer{
+        margin-left: 0;
+        width: 100%;
+    }
+}

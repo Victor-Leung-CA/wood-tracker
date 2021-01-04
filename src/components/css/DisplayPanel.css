@@ -1,0 +1,14 @@
+.displayPanel{
+    width: calc(100vw - 470px);
+    left: 400px;
+    position: relative;
+    padding-top: 1rem;
+}
+
+@media screen and (max-width: 1350px) {
+    .displayPanel{
+        width: 90%;
+        left: 5%;
+        padding-top: 1rem;
+    }
+}
