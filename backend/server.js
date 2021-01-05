@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const path = require('path');
 
 //Initialise .env file
 require('dotenv').config();
@@ -23,6 +24,11 @@ const usersRouter = require("./routes/user");
 app.use('/users', usersRouter);
 const woodRouter = require("./routes/wood");
 app.use('/wood', woodRouter);
+
+app.use(express.static(path.join(__dirname, "client", "build")))
+app.get('*', (req, res) => {
+   res.sendFile(path.join(__dirname, "../", "public", "index.html"));
+});
 
 //Bind connection to error event (to get notification of connection errors)
 db.on('open', () => {
