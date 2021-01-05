@@ -25,9 +25,10 @@ app.use('/users', usersRouter);
 const woodRouter = require("./routes/wood");
 app.use('/wood', woodRouter);
 
-app.use(express.static(path.join(__dirname, "build")))
+app.use(express.static(path.join(__dirname, "../", "build")))
 app.get('*', (req, res) => {
    res.sendFile(path.join(__dirname, "../", "build", "index.html"));
+   console.log(path.join(path.join(__dirname, "../", "build", "index.html")))
 });
 
 //Bind connection to error event (to get notification of connection errors)
