@@ -9,7 +9,7 @@ import WoodSelection from "./components/WoodSelectionPage"
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/">
         <Route path = "/" component = {Sidebar}/>
         <Route path = "/" exact component = {SearchPage}/>
         <Route path = "/wood-selection" exact component = {WoodSelection}/>

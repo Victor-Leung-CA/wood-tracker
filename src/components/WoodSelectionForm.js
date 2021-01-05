@@ -30,7 +30,7 @@ const WoodSelectionForm = (props) => {
             woodQuantity: woodQuantity
         }
 
-        axios.post("http://localhost:5000/wood/add", submissionInfo)
+        axios.post("/wood/add", submissionInfo)
             .then((response) => {
                 alert("Wood added!");
             })

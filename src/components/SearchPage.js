@@ -39,7 +39,7 @@ export default class SearchPage extends React.Component {
     }
 
     onFormSubmit(wood, thickness){
-        axios.get('http://localhost:5000/wood')
+        axios.get("/wood")
             .then(res => {
                 let foundWood = 0;
                 res.data.map(resInfo => {

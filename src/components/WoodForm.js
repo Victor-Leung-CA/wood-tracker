@@ -33,7 +33,7 @@ export default class WoodForm extends React.Component{
                 woodThickness: this.props.tableInfo.thickness,
                 amountUsed: this.state.quantity
             }
-            axios.post("http://localhost:5000/wood/use", submissionInfo)
+            axios.post("/wood/use", submissionInfo)
                 .then((response) => {
                     console.log(response);
                     this.props.submitForm(this.props.tableInfo.type, this.props.tableInfo.thickness)
@@ -48,7 +48,7 @@ export default class WoodForm extends React.Component{
                 woodThickness: this.props.tableInfo.thickness,
                 amountAdded: this.state.quantity
             }
-            axios.post("http://localhost:5000/wood/update", submissionInfo)
+            axios.post("/wood/update", submissionInfo)
                 .then((response) => {
                     console.log(response);
                     this.props.submitForm(this.props.tableInfo.type, this.props.tableInfo.thickness)
